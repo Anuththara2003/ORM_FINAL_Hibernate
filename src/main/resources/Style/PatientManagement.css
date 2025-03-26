@@ -1,0 +1,155 @@
+/* Root container styling */
+.main-container {
+    -fx-background-color: #f4f7fa; /* Light grayish-blue background */
+    -fx-padding: 20;
+    -fx-max-width: 885.6px;
+    -fx-max-height: 544px;
+}
+
+/* Header styling */
+.header-container {
+    -fx-background-color: #3498db; /* Blue header */
+    -fx-padding: 10;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.header-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff; /* White text */
+}
+
+.header-subtitle {
+    -fx-font-size: 16px;
+    -fx-text-fill: #ecf0f1; /* Light gray text */
+}
+
+/* Patient management container */
+.patient-management-container {
+    -fx-background-color: #ffffff; /* White background */
+    -fx-padding: 15;
+    -fx-border-color: #dcdcdc; /* Light gray border */
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+/* Form styling */
+.patient-form {
+    -fx-background-color: #fafafa; /* Very light gray */
+    -fx-padding: 8; /* Reduced padding */
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.patient-form .label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #2c3e50; /* Dark blue-gray text for all labels except Name */
+    -fx-padding: 2 0 2 0; /* Reduced vertical padding to bring labels closer */
+}
+
+.patient-form .default-label {
+    -fx-font-size: 12px;
+    -fx-padding: 2 0 2 0; /* Same padding, but no custom color */
+    /* Default color will be applied (usually black) */
+}
+
+.patient-form .text-field, .patient-form .text-area, .patient-form .combo-box, .patient-form .date-picker {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #bdc3c7; /* Gray border */
+    -fx-border-width: 1;
+    -fx-border-radius: 3;
+    -fx-padding: 5;
+    -fx-font-size: 12px;
+}
+
+/* Table styling */
+.patient-table {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #dcdcdc;
+    -fx-border-width: 1;
+}
+
+.patient-table .column-header {
+    -fx-background-color: #3498db; /* Blue header */
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+}
+
+.patient-table .column-header .label {
+    -fx-text-fill: #ffffff;
+}
+
+.patient-table .table-row-cell:filled:selected {
+    -fx-background-color: #3498db; /* Blue selection */
+    -fx-text-fill: #ffffff;
+}
+
+/* Action buttons styling */
+.action-buttons {
+    -fx-padding: 10;
+}
+
+.save-button {
+    -fx-background-color: #2ecc71; /* Green */
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-padding: 8 15;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.save-button:hover {
+    -fx-background-color: #27ae60; /* Darker green on hover */
+}
+
+.update-button {
+    -fx-background-color: #f1c40f; /* Yellow */
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-padding: 8 15;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.update-button:hover {
+    -fx-background-color: #e67e22; /* Darker yellow on hover */
+}
+
+.delete-button {
+    -fx-background-color: #e74c3c; /* Red */
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-padding: 8 15;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.delete-button:hover {
+    -fx-background-color: #c0392b; /* Darker red on hover */
+}
+
+.more-details-button {
+    -fx-background-color: #9b59b6; /* Purple */
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-padding: 8 15;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.more-details-button:hover {
+    -fx-background-color: #8e44ad; /* Darker purple on hover */
+}
+
+/* Footer styling */
+.footer-container {
+    -fx-background-color: #34495e; /* Dark blue-gray */
+    -fx-padding: 10;
+}
+
+.footer-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #ecf0f1; /* Light gray text */
+}

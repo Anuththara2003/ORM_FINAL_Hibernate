@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxHeight="544.0" maxWidth="885.6" spacing="20" styleClass="main-container" stylesheets="@../Style/PatientManagement.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.assignment.orm.service.orm_final_mentalhealthcarecenter.Controller.PatientManagementController">
+
+    <!-- Header Section -->
+    <HBox alignment="CENTER" spacing="10" styleClass="header-container">
+        <VBox alignment="CENTER" spacing="5">
+            <Label styleClass="header-title" text="Serenity Mental Health Center" />
+            <Label styleClass="header-subtitle" text="Patient Management" />
+        </VBox>
+    </HBox>
+
+    <!-- Patient Management Container -->
+    <VBox spacing="20" styleClass="patient-management-container" VBox.vgrow="ALWAYS">
+        <!-- Form Section -->
+        <GridPane alignment="CENTER" hgap="15" styleClass="patient-form" vgap="8">
+            <padding>
+                <Insets bottom="20" left="20" right="20" top="10" />
+            </padding>
+
+            <Label text="Patient ID:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <TextField fx:id="patientIdField" prefWidth="150" prefHeight="25" promptText="Enter Patient ID" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+            <Label text="Name:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <TextField fx:id="nameField" prefWidth="150" prefHeight="25" promptText="Enter Name" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+            <Label text="Contact:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <TextField fx:id="contactField" prefWidth="150" prefHeight="25" promptText="Enter Contact Number" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+            <Label text="Email:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <TextField fx:id="emailField" prefWidth="150" prefHeight="25" promptText="Enter Email" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+            <Label text="Patient History:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+            <TextArea fx:id="historyField" prefWidth="150" prefHeight="50" promptText="Enter Patient History" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+            <Label text="Choose Program:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+            <ComboBox fx:id="programComboBox" prefWidth="150" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+            <Label text="Status Date:" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+            <DatePicker fx:id="statusDatePicker" prefWidth="150" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints>
+        </GridPane>
+
+        <!-- Patient Table -->
+        <TableView fx:id="patientTable" prefHeight="300" styleClass="patient-table" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="patientIdColumn" prefWidth="100" text="Patient ID" />
+                <TableColumn fx:id="nameColumn" prefWidth="200" text="Name" />
+                <TableColumn fx:id="contactColumn" prefWidth="150" text="Contact" />
+                <TableColumn fx:id="emailColumn" prefWidth="200" text="Email" />
+                <TableColumn fx:id="programColumn" prefWidth="150" text="Program" />
+                <TableColumn fx:id="statusDateColumn" prefWidth="150" text="Status Date" />
+            </columns>
+        </TableView>
+
+        <!-- Action Buttons (Below the Table) -->
+        <HBox alignment="CENTER" spacing="15" styleClass="action-buttons">
+            <Button fx:id="savePatientButton" onAction="#handleSavePatient" styleClass="save-button" text="💾 Save" />
+            <Button fx:id="updatePatientButton" onAction="#handleUpdatePatient" styleClass="update-button" text="🔄 Update" />
+            <Button fx:id="deletePatientButton" onAction="#handleDeletePatient" styleClass="delete-button" text="🗑 Delete" />
+            <Button fx:id="moreDetailsButton" onAction="#handleMoreDetails" styleClass="more-details-button" text="🧐 More Details" />
+        </HBox>
+    </VBox>
+
+    <!-- Footer -->
+    <HBox alignment="CENTER" styleClass="footer-container">
+        <Label styleClass="footer-label" text="© 2025 Serenity Mental Health Center | Confidential" />
+    </HBox>
+</VBox>

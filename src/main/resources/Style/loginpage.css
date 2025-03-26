@@ -1,0 +1,96 @@
+/* login-styles.css */
+/* CSS Styling for The Serenity Mental Health Therapy Center Login Page */
+
+.root {
+    -fx-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -fx-background-color: #f5f5f5;
+}
+
+/* Login Form Styling */
+.login-form {
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 10);
+    -fx-padding: 30px;
+}
+
+/* Text Styling */
+.welcome-text {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2E8B57;
+}
+
+.subtitle-text {
+    -fx-font-size: 14px;
+    -fx-text-fill: #757575;
+    -fx-font-style: italic;
+}
+
+.field-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #555555;
+}
+
+/* Input Field Styling */
+.input-container {
+    -fx-padding: 5px 0;
+}
+
+.input-field {
+    -fx-background-color: #f9f9f9;
+    -fx-background-radius: 5px;
+    -fx-border-color: #dddddd;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+    -fx-font-size: 14px;
+}
+
+.input-field:focused {
+    -fx-border-color: #2E8B57;
+    -fx-background-color: white;
+}
+
+/* Button Styling */
+.login-button {
+    -fx-background-color: #2E8B57;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 12px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+    -fx-font-size: 14px;
+}
+
+.login-button:hover {
+    -fx-background-color: #3da06c;
+}
+
+.login-button:pressed {
+    -fx-background-color: #267149;
+}
+
+/* Hyperlink Styling */
+.hyperlink {
+    -fx-text-fill: #2E8B57;
+    -fx-underline: false;
+    -fx-border-color: transparent;
+    -fx-padding: 2px;
+}
+
+.hyperlink:hover {
+    -fx-underline: true;
+    -fx-text-fill: #3da06c;
+}
+
+/* Separator Styling */
+.separator {
+    -fx-background-color: #e0e0e0;
+    -fx-padding: 10px 0;
+}
+
+/* Animation for Login Button */
+.login-button {
+    -fx-transition: all 0.3s ease;
+}

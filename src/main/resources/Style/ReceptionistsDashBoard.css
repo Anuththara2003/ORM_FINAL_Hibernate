@@ -1,0 +1,66 @@
+/* General Styles */
+.root {
+    -fx-font-family: "Arial";
+    -fx-background-color: #f5f5f5;
+}
+
+/* Header */
+.header {
+    -fx-background-color: #4CAF50;
+    -fx-padding: 15px;
+    -fx-spacing: 10px;
+    -fx-alignment: center-left;
+}
+
+.title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+/* Sidebar */
+.sidebar {
+    -fx-background-color: #2E7D32;
+    -fx-spacing: 10px;
+    -fx-padding: 15px;
+}
+
+.nav-button {
+    -fx-background-color: #2980b9;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px;
+    -fx-pref-width: 200px;
+    -fx-background-radius: 5px;
+}
+
+.nav-button:hover {
+    -fx-background-color: #1B5E20;
+}
+
+/* Reports Section */
+.reports-section {
+    -fx-background-color: white;
+    -fx-padding: 20px;
+    -fx-border-radius: 10px;
+}
+
+.report-card {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #C8E6C9;
+    -fx-padding: 15px;
+    -fx-border-radius: 10px;
+    -fx-pref-width: 250px;
+}
+
+/* Footer */
+.footer {
+    -fx-background-color: #4CAF50;
+    -fx-padding: 10px;
+    -fx-alignment: center;
+}
+
+.footer-text {
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+}

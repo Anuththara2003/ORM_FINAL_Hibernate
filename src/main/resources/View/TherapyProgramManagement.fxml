@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.assignment.orm.service.orm_final_mentalhealthcarecenter.Controller.TherapyProgramManagementController"
+      stylesheets="@../Style/TherapyProgramManagement.css"
+      spacing="20"
+      alignment="CENTER"
+      prefHeight="600"
+      prefWidth="800"
+      styleClass="main-container">
+
+    <!-- Header Section -->
+    <HBox alignment="CENTER" styleClass="header-container" spacing="10">
+        <VBox alignment="CENTER" spacing="5">
+            <Label text="Serenity Mental Health Center" styleClass="header-title"/>
+            <Label text="Therapy Program Management" styleClass="header-subtitle"/>
+        </VBox>
+    </HBox>
+
+    <!-- Therapy Program Management Container -->
+    <VBox VBox.vgrow="ALWAYS" styleClass="program-management-container" spacing="20">
+        <!-- Form Section -->
+        <GridPane styleClass="program-form" hgap="15" vgap="8" alignment="CENTER">
+            <padding>
+                <Insets top="10" right="20" bottom="20" left="20"/>
+            </padding>
+
+            <Label text="Program ID:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <TextField fx:id="programIdField" prefWidth="150" prefHeight="25" promptText="Enter Program ID" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+            <Label text="Name:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+            <TextField fx:id="nameField" prefWidth="150" prefHeight="25" promptText="Enter Program Name" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+            <Label text="Fee:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+            <TextField fx:id="feeField" prefWidth="150" prefHeight="25" promptText="Enter Program Fee" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+            <Label text="Duration:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+            <TextField fx:id="durationField" prefWidth="150" prefHeight="25" promptText="Enter Duration" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+            <Label text="Description:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+            <TextArea fx:id="descriptionField" prefWidth="150" prefHeight="50" promptText="Enter Program Description" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+        </GridPane>
+
+        <!-- Therapy Program Table -->
+        <TableView fx:id="programTable" VBox.vgrow="ALWAYS" styleClass="program-table" prefHeight="300">
+            <columns>
+                <TableColumn text="Program ID" fx:id="programIdColumn" prefWidth="100"/>
+                <TableColumn text="Name" fx:id="nameColumn" prefWidth="200"/>
+                <TableColumn text="Fee" fx:id="feeColumn" prefWidth="100"/>
+                <TableColumn text="Duration" fx:id="durationColumn" prefWidth="100"/>
+                <TableColumn text="Description" fx:id="descriptionColumn" prefWidth="200"/>
+            </columns>
+        </TableView>
+
+        <!-- Action Buttons (Below the Table) -->
+        <HBox alignment="CENTER" spacing="15" styleClass="action-buttons">
+            <Button text="💾 Save" fx:id="saveProgramButton" styleClass="save-button" onAction="#handleSaveProgram"/>
+            <Button text="🔄 Update" fx:id="updateProgramButton" styleClass="update-button" onAction="#handleUpdateProgram"/>
+            <Button text="🗑 Delete" fx:id="deleteProgramButton" styleClass="delete-button" onAction="#handleDeleteProgram"/>
+        </HBox>
+    </VBox>
+
+    <!-- Footer -->
+    <HBox alignment="CENTER" styleClass="footer-container">
+        <Label text="© 2025 Serenity Mental Health Center | Confidential" styleClass="footer-label"/>
+    </HBox>
+</VBox>

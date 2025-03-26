@@ -1,0 +1,150 @@
+/* Root container styling */
+.main-container {
+    -fx-background-color: #f4f7fa; /* Light grayish-blue background */
+    -fx-padding: 20;
+    -fx-pref-width: 800px;
+    -fx-pref-height: 600px;
+}
+
+/* Header styling */
+.header-container {
+    -fx-background-color: #3498db; /* Blue header */
+    -fx-padding: 10;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.header-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff; /* White text */
+}
+
+.header-subtitle {
+    -fx-font-size: 16px;
+    -fx-text-fill: #ecf0f1; /* Light gray text */
+}
+
+/* User management container */
+.user-management-container {
+    -fx-background-color: #ffffff; /* White background */
+    -fx-padding: 15;
+    -fx-border-color: #dcdcdc; /* Light gray border */
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+/* Form styling */
+.user-form {
+    -fx-background-color: #fafafa; /* Very light gray */
+    -fx-padding: 8; /* Reduced padding */
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.user-form .label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #2c3e50; /* Dark blue-gray text for all labels unless overridden */
+    -fx-padding: 2 0 2 0; /* Reduced vertical padding to bring labels closer */
+}
+
+.user-form .left-align {
+    -fx-alignment: CENTER-LEFT; /* Align to left */
+}
+
+.user-form .right-align {
+    -fx-alignment: CENTER-RIGHT; /* Align to right */
+}
+
+.user-form .default-label {
+    -fx-font-size: 12px;
+    -fx-padding: 2 0 2 0; /* Same padding, but no custom color */
+    /* Default color will be applied (usually black) */
+}
+
+.user-form .text-field, .user-form .password-field, .user-form .combo-box {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #bdc3c7; /* Gray border */
+    -fx-border-width: 1;
+    -fx-border-radius: 3;
+    -fx-padding: 5;
+    -fx-font-size: 12px;
+}
+
+/* Table styling */
+.user-table {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #dcdcdc;
+    -fx-border-width: 1;
+}
+
+.user-table .column-header {
+    -fx-background-color: #d3d3d3; /* Light gray header as in screenshot */
+    -fx-text-fill: #000000; /* Black text */
+    -fx-font-weight: bold;
+}
+
+.user-table .column-header .label {
+    -fx-text-fill: #000000; /* Black text for column headers */
+}
+
+.user-table .table-row-cell:filled:selected {
+    -fx-background-color: #3498db; /* Blue selection */
+    -fx-text-fill: #ffffff;
+}
+
+/* Action buttons styling */
+.action-buttons {
+    -fx-padding: 10;
+}
+
+.save-button {
+    -fx-background-color: #28a745; /* Green as in screenshot */
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-padding: 8 15;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.save-button:hover {
+    -fx-background-color: #218838; /* Darker green on hover */
+}
+
+.update-button {
+    -fx-background-color: #007bff; /* Blue as in screenshot */
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-padding: 8 15;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.update-button:hover {
+    -fx-background-color: #0056b3; /* Darker blue on hover */
+}
+
+.delete-button {
+    -fx-background-color: #dc3545; /* Red as in screenshot */
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-padding: 8 15;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.delete-button:hover {
+    -fx-background-color: #c82333; /* Darker red on hover */
+}
+
+/* Footer styling */
+.footer-container {
+    -fx-background-color: #34495e; /* Dark blue-gray */
+    -fx-padding: 10;
+}
+
+.footer-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #ecf0f1; /* Light gray text */
+}

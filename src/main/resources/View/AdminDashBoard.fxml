@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="656.0" prefWidth="1136.0" stylesheets="@../Style/AdminDashBoard.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.assignment.orm.service.orm_final_mentalhealthcarecenter.Controller.AdminDashBoardController">
+
+    <!-- Top Header -->
+    <top>
+        <HBox spacing="10.0" styleClass="header">
+            <Label styleClass="title" text="Serenity Mental Health Center" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Button fx:id="notificationButton" styleClass="notification-button">🔔</Button>
+        </HBox>
+    </top>
+
+    <!-- Left Sidebar Navigation -->
+    <left>
+        <VBox styleClass="sidebar">
+            <Button fx:id="dashboardButton" onAction="#btndashboard" prefHeight="51.0" prefWidth="132.0" styleClass="nav-button" text="🏠 Dashboard" />
+            <Button fx:id="userManagementButton" onAction="#btnuserManagementButton" prefHeight="61.0" prefWidth="153.0" styleClass="nav-button" text="👥 User Management" />
+            <Button fx:id="therapistManagementButton" onAction="#btntherapistManagementButton" prefHeight="54.0" prefWidth="187.0" styleClass="nav-button" text="👩‍⚕️ Therapist Management" />
+            <Button fx:id="therapyProgramsButton" onAction="#btntherapyProgramsButton" prefHeight="62.0" prefWidth="151.0" styleClass="nav-button" text="📋 Therapy Programs" />
+            <Button fx:id="patientManageButton" onAction="#btnpatientManageButton" prefHeight="52.0" prefWidth="168.0" styleClass="nav-button" text="👤 Patient Management" />
+            <Button fx:id="sessionSchedulingButton" onAction="#btnsessionSchedulingButton" prefHeight="51.0" prefWidth="158.0" styleClass="nav-button" text="📅 Session Scheduling" />
+            <Button fx:id="paymentsButton" onAction="#btnpaymentsButton" prefHeight="48.0" prefWidth="179.0" styleClass="nav-button" text="💰 Payments and Invoices" />
+            <Button fx:id="reportsButton" onAction="#btnreportsButton" prefHeight="54.0" prefWidth="173.0" styleClass="nav-button" text="📊 Reports and Analytics" />
+            <Button fx:id="logoutButton" onAction="#btnlogoutButton" prefHeight="55.0" prefWidth="106.0" styleClass="nav-button" text="⚙️ Logout" />
+        </VBox>
+    </left>
+
+    <!-- Center Content Dashboard -->
+    <center>
+        <VBox fx:id="mainVBox" prefHeight="565.0" prefWidth="892.0" spacing="20" styleClass="main-content">
+            <!-- Quick Overview Cards -->
+            <HBox spacing="15" styleClass="overview-cards">
+                <VBox styleClass="card" HBox.hgrow="ALWAYS">
+                    <Label styleClass="card-title" text="Total Patients" />
+                    <Label styleClass="card-value" text="152" />
+                    <Label styleClass="card-subtext" text="+12 this month" />
+                </VBox>
+                <VBox styleClass="card" HBox.hgrow="ALWAYS">
+                    <Label styleClass="card-title" text="Active Therapists" />
+                    <Label styleClass="card-value" text="24" />
+                    <Label styleClass="card-subtext" text="3 New Hires" />
+                </VBox>
+                <VBox styleClass="card" HBox.hgrow="ALWAYS">
+                    <Label styleClass="card-title" text="Scheduled Sessions" />
+                    <Label styleClass="card-value" text="87" />
+                    <Label styleClass="card-subtext" text="This Week" />
+                </VBox>
+            </HBox>
+        </VBox>
+    </center>
+
+    <!-- Bottom Footer -->
+    <bottom>
+        <HBox alignment="CENTER" styleClass="footer">
+            <Label styleClass="footer-text" text="© 2025 Serenity Mental Health Center | Confidential" />
+        </HBox>
+    </bottom>
+</BorderPane>
